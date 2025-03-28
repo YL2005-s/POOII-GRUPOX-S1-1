@@ -22,7 +22,10 @@ como encapsulamiento, reutilización de código y creación de instancias.
     Se generó un error de compilación porque radio es un atributo privado y no se puede acceder directamente desde otra clase.
   g. En la clase “CirculoTest.java”, ejecuta la siguiente instrucción: c1.radio=42.0, donde c1 es una instancia del objeto Círculo. ¿Qué ocurrió? Explique el mensaje de error.
     Se produjo un error de compilación porque radio es privado y no se puede modificar directamente desde fuera de la clase Circulo.
+  h. ¿Con qué método modificas el valor de un atributo de la clase “Circulo.java”?
+    Se modificaría mediante un método setRadio(double radio), que se agregaría a la clase para cambiar su valor de forma controlada.
+  j. ¿Para qué sirve la palabra reservada “this”? Modifique el constructor con argumentos (radio y color) y utiliza “this” y métodos setters en la clase “Circulo.java”.
+    “this” se usa para referenciar los atributos del objeto actual y diferenciar variables locales de atributos de la clase.
+  k. ¿Para qué sirve el método toString()?
+    Sirve para representar un objeto como una cadena de texto, facilitando su impresión.
 
-h.	¿Con qué método modificas el valor de un atributo de la clase “Circulo.java”?
- 
-Se modificaría mediante un método setRadio(double radio), que se agregaría a la clase para cambiar su valor de forma controlada.
