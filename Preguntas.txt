@@ -1,0 +1,28 @@
+1. Compilar y ejecutar la clase "Circulo.java". ¿Puedes ejecutar la clase “Circulo.java”? ¿Porqué?
+No, no se puede ejecutar debido a que no es una clase main, se puede compilar debido a que su sintaxis es correcta, pero no ejecutar.
+
+2. ¿Qué pasos en común debe realizar para ejecutar cada uno de los ejercicios? Describir conceptos del paradigma orientada a objetos.
+Para ejecutar ambos ejercicios, primero se debe escribir y guardar las clases Circulo y CirculoTest en archivos separados, luego de eso, se compilan ambas clases y se ejecuta java 
+CirculoTest. En ambos casos, se crean objetos de la clase Circulo utilizando diferentes constructores y se accede a sus atributos mediante métodos, esto aplica principios de POO 
+como encapsulamiento, reutilización de código y creación de instancias.
+
+3. Ejecutar la clase “CirculoTest.java” y responde las siguientes preguntas:
+  a. ¿Qué es el constructor y para qué sirve?
+    El constructor es un método especial que se ejecuta automáticamente al crear un objeto, sirve para inicializar los atributos de la clase y garantizar que el objeto tenga un estado válido 
+    desde su creación.
+  b. ¿Con qué método recupero el radio del círculo?
+    Se recupera el radio del círculo utilizando el método getRadio().
+  c. ¿Por qué los atributos son privados y los métodos son públicos?
+    Los atributos son privados evitar posibles modificaciones no controladas, los métodos son públicos para permitir el acceso seguro a los atributos mediante reglas definidas por la clase.
+  d. ¿Qué pasa si accedes directamente a los atributos del círculo desde el método main()?
+    Se generará un error en la sintaxis porque los atributos son privados y solo pueden ser accedidos a través de métodos públicos.
+  e. ¿Qué pasa si modificas directamente el atributo área del círculo desde el método main()?
+    No es posible realizar dicha acción debido a que el área no es un atributo almacenado, sino que se calcula con el método getArea(), el cual devuelve un valor sin permitir modificaciones directas.
+  f. En la clase “CirculoTest.java”, ejecuta la siguiente instrucción: System.out.println(c1.radio), donde c1 es una instancia del objeto Círculo. ¿Qué ocurrió? Explique el mensaje de error.
+    Se generó un error de compilación porque radio es un atributo privado y no se puede acceder directamente desde otra clase.
+  g. En la clase “CirculoTest.java”, ejecuta la siguiente instrucción: c1.radio=42.0, donde c1 es una instancia del objeto Círculo. ¿Qué ocurrió? Explique el mensaje de error.
+    Se produjo un error de compilación porque radio es privado y no se puede modificar directamente desde fuera de la clase Circulo.
+
+h.	¿Con qué método modificas el valor de un atributo de la clase “Circulo.java”?
+ 
+Se modificaría mediante un método setRadio(double radio), que se agregaría a la clase para cambiar su valor de forma controlada.
